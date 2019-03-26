@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+     
+    <title>AIU'caf order form</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="order_process_styles.css">
+</head>
+<body>
+        <!--NAV BAR-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <a href="#" class="navbar-brand">AIU's Caf</a>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>  
+                </button>
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Main</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Products</a>
+                        </li>
+                         <li class="nav-item">
+                            <a href="order.html" class="nav-link">Order</a>
+                        </li>
+                    </ul>
+                </div>
+        
+            </nav>
+
+   
+<form>
+        <script> 
+     
+                function countDown(secs,elem) {
+               var element = document.getElementById(elem);
+               element.innerHTML = "Your food will be done in "+Math.round(secs/60)+" minutes please wait ;)";
+               if(secs < 1) {
+                   clearTimeout(timer);
+                   element.innerHTML = '<h2>Your Food Is Done!!!</h2>';
+               }
+               secs--;
+               var timer = setTimeout('countDown('+secs+',"'+elem+'")',1000);
+           }
+           
+
+
+           function qnumber(elem){
+               var element = document.getElementById(elem);
+               var qno  ;
+               element.innerHTML = "Your que number is: "+Math.floor(Math.random(qno)*20) ;
+           }
+           function progress(){
+               var seconds = 600;
+               var percentageNow = 0;
+               for (let index = seconds; index = 0; index--) {
+                   percentageNow = (index/seconds)*100;
+               }
+
+
+           }
+
+
+           
+               </script>
+
+        <div id ="counter"></div>
+        <div id ="Q-number"></div>
+        <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow= progress aria-valuemin="0" aria-valuemax="100">25%</div>
+        </div>
+        
+</form>
+    
+
+
+               
+
+
+
+    
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>countDown(600,"counter");</script>
+    <script>qnumber("Q-number")</script>
+  
+</body>
+</html>

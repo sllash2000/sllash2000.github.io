@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AIU'Caf order form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">AIU's Caf</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+            <span class="navbar-toggler-icon"></span>  
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Main</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Products</a>
+                </li>
+                 <li class="nav-item">
+                    <a href="order.html" class="nav-link">Order</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <form action="" class="main-form needs-validation" novalidate>
+        <h5>CUSTOMER INFO </h5>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control is-valid">
+                    <div class="valid-feedback">Looks good!</div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="idnumber">ID Number</label>
+                    <input type="text" name="idnumber" id="idnumber" class="form-control">
+                    <small class="form-text text-muted">
+                        Your name and ID should match.
+                    </small>
+                </div>
+            </div>
+        </div>
+        <h5>ORDER INFO</h5>
+        <div class="form-group">
+             <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioPick" value="option1">
+                <label class="form-check-label" for="inlineRadioPick">Pick-Up</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioDeliv" value="option2">
+                <label class="form-check-label" for="inlineRadioDeliv">Delivery (+5 Baht)</label>
+            </div>
+          
+            <div class="form-group form-check-inline">
+                    <select class="form-control form-control-sm">
+                    <option>Select Dorm</option>
+                    <option>Eve Hall</option>
+                    <option>Ruth Hall</option>
+                    <option>Esther Hall</option>
+                    <option>Sarah Hall</option>
+                    <option>Elijah Hall</option>
+                    <option>Solomon Hall</option>
+                    <option>Deborah Hall (Coming soon!!!)</option>
+                    </select>
+
+                    <label class ="roomnum-lable"for="roomnum">Room Number</label>
+                    <input type="text" name="roomnum" id="roomnum" class="form-control is-valid">
+            </div>    
+           
+            <div class="form-group-orderbox">
+                <label class="mr-sm-2" for="foodselection">Select Food</label>
+             <select class="custom-select mr-sm-2" id="foodselection">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+             </select>
+              <select class="custom-select mr-sm-2" id="foodselection">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+             </select>
+              <select class="custom-select mr-sm-2" id="foodselection">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+             </select>
+              <select class="custom-select mr-sm-2" id="foodselection">
+                <option selected>Choose...</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+             </select>
+        
+            <label for="form-check form-check-inline">Box?</label>  
+             <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioYes" value="option1">
+                <label class="form-check-label" for="inlineRadioYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioNo" value="option2">
+                <label class="form-check-label" for="inlineRadioNo">No</label>
+            </div>
+            <br>
+            <label for="form-check form-check-inline">Chilli?</label>  
+             <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioYes" value="option1">
+                <label class="form-check-label" for="inlineRadioYes">Yes</label>
+            </div>
+            
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioNo" value="option2">
+                <label class="form-check-label" for="inlineRadioNo">No</label>
+            </div>
+            <br>
+            
+            <label for="form-check form-check-inline">Cheese?</label>  
+             <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioYes" value="option1">
+                <label class="form-check-label" for="inlineRadioYes">Yes</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadioNo" value="option2">
+                <label class="form-check-label" for="inlineRadioNo">No</label>
+            </div>
+
+
+            <select class="custom-select">
+                    <option selected>Beverages</option>
+                    <option value="WaterBootle">Water Bottle</option>
+                    <option value="Smoothie">Smoothie</option>
+                     <option value="SoftDrink">Soft Drink</option>
+            </select>
+
+          
+           
+
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comments</label>
+                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+
+
+
+
+
+            </div>
+       
+        </div>
+        <div class="form-check">
+            <input type="checkbox" id="accept-terms" class="form-check-input">
+            <label for="accept-terms" class="form-check-label">Accept Terms &amp; Conditions</label>
+        </div>
+        <a href="order_process.html" button type="submit" class="btn btn-primary" >Submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var form = document.querySelector('.needs-validation');
+
+        form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        })
+
+         var next = 0;
+  
+    </script>
+</body>
+
+</html>

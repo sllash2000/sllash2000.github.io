@@ -1,0 +1,9 @@
+.main-form {
+    width: 450px;
+    margin: auto;
+}
+form .roomnum-lable{
+    
+    font-size: 12px;
+    padding: 5px;
+}
